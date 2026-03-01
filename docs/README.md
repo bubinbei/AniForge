@@ -1,28 +1,29 @@
-﻿# AniForge Docs Vault
+# AniForge Docs Vault
 
 Документация хранится в формате Obsidian Vault и отражает **фактическое состояние проекта**.
 
+## Точка входа
+- [[00_Home]]
+
 ## Где главный чеклист
-- Основной контроль выполнения Phase 1: `docs/01_Roadmap/Phase_1_MVP.md`
-- Фактический статус реализации: `docs/10_Progress/As_Built_Status.md`
-- Текущий спринт: `docs/10_Progress/Sprint_1.md`
+- [[01_Roadmap/Phase_1_MVP]]
+- [[10_Progress/As_Built_Status]]
+- [[10_Progress/Sprint_1]]
 
-## Как читать vault
-1. `00_Vision` — продуктовая цель и монетизация.
-2. `01_Roadmap` — план фаз + что закрыто.
-3. `04_Frontend` / `05_Backend` — инженерная архитектура и контракты.
-4. `07_DevOps` — self-host и эксплуатация.
-5. `10_Progress` — оперативный статус и принятые решения.
-
-## Быстрый статус (на дату обновления)
-- MVP-ядро собрано: auth, catalog, list, admin, health.
-- Recommendations v1 реализованы: endpoint + UI блок в профиле.
-- Docker/compose/nginx/backup scripts добавлены.
-- Следующий блок: gamification (XP/levels/achievements).
+## Карта документации
+- Видение и монетизация: [[00_Vision/Vision]], [[00_Vision/Value_Proposition]], [[00_Vision/Monetization]]
+- Roadmap: [[01_Roadmap/Phase_1_MVP]], [[01_Roadmap/Phase_2_Expansion]], [[01_Roadmap/Phase_3_Startup]], [[01_Roadmap/Roadmap_Diagram]]
+- Product: [[02_Product/Feature_List]], [[02_Product/User_Flow]], [[02_Product/Personas]]
+- Frontend: [[04_Frontend/Architecture]], [[04_Frontend/Tasks]], [[04_Frontend/Refactoring]]
+- Backend: [[05_Backend/API_Structure]], [[05_Backend/DB_Schema]], [[05_Backend/Tasks]]
+- AI: [[06_AI/Recommendation_Logic]], [[06_AI/Future_ML]]
+- DevOps: [[07_DevOps/Server_Architecture]], [[07_DevOps/Docker]], [[07_DevOps/Backup_Strategy]]
+- Технологические решения: [[11_Tech_Decisions/README]], [[11_Tech_Decisions/Stack_Overview]], [[11_Tech_Decisions/Frontend_Decisions]], [[11_Tech_Decisions/Auth_Decisions]], [[11_Tech_Decisions/Backend_Decisions]], [[11_Tech_Decisions/DevOps_Decisions]]
+- Progress: [[10_Progress/As_Built_Status]], [[10_Progress/Sprint_1]], [[10_Progress/Sprint_2]]
 
 ## Правила поддержания актуальности
 - После каждой заметной фичи обновлять:
-  - `docs/10_Progress/As_Built_Status.md`
-  - профильный документ (frontend/backend/devops/ai)
-  - чеклист фазы (Phase_1/2/3)
-- Вносить не только "что сделано", но и ограничения/долги.
+- [[10_Progress/As_Built_Status]]
+- профильный документ по направлению (frontend/backend/devops/ai)
+- чеклист фазы: [[01_Roadmap/Phase_1_MVP]], [[01_Roadmap/Phase_2_Expansion]], [[01_Roadmap/Phase_3_Startup]]
+- Фиксировать не только «что сделано», но и ограничения/технический долг.

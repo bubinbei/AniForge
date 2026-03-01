@@ -1,4 +1,4 @@
-﻿# As-Built Status
+# As-Built Status
 
 Дата обновления: 2026-03-01
 
@@ -41,3 +41,11 @@
 2. Улучшение рекомендаций v1 (diversity + penalties).
 3. Тестирование: unit для сервисов и validators.
 4. Операционный smoke-runbook + restore drill.
+
+## Связанные заметки
+- [[01_Roadmap/Phase_1_MVP]]
+- [[01_Roadmap/Phase_2_Expansion]]
+- [[04_Frontend/Architecture]]
+- [[05_Backend/API_Structure]]
+- [[06_AI/Recommendation_Logic]]
+- [[07_DevOps/Docker]]

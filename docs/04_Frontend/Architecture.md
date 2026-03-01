@@ -40,3 +40,9 @@
 - Унифицировать API client wrapper в `lib/utils`.
 - Улучшить accessibility форм и кнопок.
 - Перейти на `next/image` после нормализации источников картинок.
+
+## Связанные заметки
+- [[04_Frontend/Tasks]]
+- [[05_Backend/API_Structure]]
+- [[06_AI/Recommendation_Logic]]
+- [[10_Progress/As_Built_Status]]

@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "e5c8625d42afe4ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3c468e1605bc936",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f0577c11dac210ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00_Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f8c52b9ecb2c93b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "69de2da185e8a41e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e08a52117e8b33ff",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "41b2bef7f4af5b77",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "7c1871309caa13ca",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "510ffd7c022fff91",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e82e5ba498781dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c7e4230bbd2537e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00_Home.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для 00_Home"
+            }
+          },
+          {
+            "id": "0d44d6f559d4969f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "00_Home.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из 00_Home"
+            }
+          },
+          {
+            "id": "905fa217151fa72c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "5d83c635e2fdf664",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "fe174bb88ebcbe15",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00_Home.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура 00_Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "f0577c11dac210ff",
+  "lastOpenFiles": [
+    "11_Tech_Decisions/DevOps_Decisions.md",
+    "11_Tech_Decisions/Backend_Decisions.md",
+    "11_Tech_Decisions/Auth_Decisions.md",
+    "11_Tech_Decisions/Frontend_Decisions.md",
+    "11_Tech_Decisions/Stack_Overview.md",
+    "11_Tech_Decisions/README.md",
+    "11_Tech_Decisions",
+    "README.md",
+    "00_Home.md",
+    "01_Roadmap/Phase_1_MVP.md",
+    "10_Progress/As_Built_Status.md"
+  ]
+}

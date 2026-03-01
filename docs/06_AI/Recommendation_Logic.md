@@ -39,3 +39,9 @@
 - Penalize `DROPPED` жанры.
 - Добавить "новизну" и diversity.
 - Собирать CTR рекомендаций для дальнейшей калибровки.
+
+## Связанные заметки
+- [[06_AI/Future_ML]]
+- [[05_Backend/API_Structure]]
+- [[04_Frontend/Architecture]]
+- [[10_Progress/As_Built_Status]]

@@ -34,3 +34,9 @@
 - Проверка backup restore в CI/операционном чеклисте.
 - Добавить инструкцию по SSL termination варианту (Caddy/Traefik/Nginx+certbot).
 - Уточнить стратегию обновлений с минимальным downtime.
+
+## Связанные заметки
+- [[07_DevOps/Server_Architecture]]
+- [[07_DevOps/Backup_Strategy]]
+- [[01_Roadmap/Phase_1_MVP]]
+- [[10_Progress/As_Built_Status]]

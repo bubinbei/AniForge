@@ -66,3 +66,9 @@
 - Единый error mapper middleware/helper.
 - Rate limiting (redis-backed) для write endpoints.
 - OpenAPI-спецификация в docs.
+
+## Связанные заметки
+- [[05_Backend/DB_Schema]]
+- [[05_Backend/Tasks]]
+- [[06_AI/Recommendation_Logic]]
+- [[07_DevOps/Docker]]
