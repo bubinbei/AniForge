@@ -1,17 +1,36 @@
-# Docker
+﻿# Docker / Self-Host (As-Built)
 
-## Сервисы compose
-- app
-- postgres
-- redis
-- nginx
+## Реализовано
+- [x] Multi-stage `Dockerfile`
+- [x] `docker-compose.yml` со стеком:
+  - app
+  - postgres
+  - redis
+  - nginx
+- [x] Nginx reverse proxy (`docker/nginx/default.conf`)
+- [x] Healthcheck для app/postgres
+- [x] Скрипты backup/restore PostgreSQL
 
-## Требования
-- Явные healthcheck для app/postgres.
-- Переменные окружения через `.env`.
-- Рестарт-политика `unless-stopped`.
+## Точки монтирования
+- NVMe:
+  - Postgres data
+  - Redis data
+- HDD:
+  - backups
+  - nginx logs
 
-## TODO
-- [ ] Добавить multi-stage Dockerfile.
-- [ ] Проверить production build в контейнере.
-- [ ] Описать zero-downtime update (базовый runbook).
+## Runbook (кратко)
+1. Заполнить `.env`.
+2. `docker compose up -d --build`.
+3. Проверить `docker compose ps`.
+4. Проверить `GET /api/health`.
+
+## Backup
+- Скрипт: `scripts/backup-postgres.sh`
+- Restore: `scripts/restore-postgres.sh <dump.sql.gz>`
+- Рекомендуемая cron-периодичность: ежедневно 03:00.
+
+## Что осталось улучшить
+- Проверка backup restore в CI/операционном чеклисте.
+- Добавить инструкцию по SSL termination варианту (Caddy/Traefik/Nginx+certbot).
+- Уточнить стратегию обновлений с минимальным downtime.
