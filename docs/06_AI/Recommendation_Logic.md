@@ -1,4 +1,4 @@
-﻿# Recommendation Logic (v1)
+# Recommendation Logic (v1)
 
 ## Input signals
 - Оценки пользователя (приоритет >=8).

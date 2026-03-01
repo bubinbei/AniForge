@@ -1,4 +1,4 @@
-﻿# AniForge Docs Vault
+# AniForge Docs Vault
 
 Эта папка является Obsidian vault для управления продуктом AniForge.
 

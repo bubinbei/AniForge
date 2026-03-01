@@ -1,4 +1,4 @@
-﻿# Refactoring Notes
+# Refactoring Notes
 
 - Вынести API-клиент слой для fetch wrappers.
 - Добавить типизацию ответов API через shared types.

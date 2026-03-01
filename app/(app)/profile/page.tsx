@@ -1,4 +1,4 @@
-﻿import { auth } from "@/auth";
+import { auth } from "@/auth";
 import { Card } from "@/components/ui/card";
 import { getProfile } from "@/lib/services/user-service";
 

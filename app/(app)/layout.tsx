@@ -1,4 +1,4 @@
-﻿import { Header } from "@/components/shared/header";
+import { Header } from "@/components/shared/header";
 import { Sidebar } from "@/components/shared/sidebar";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {

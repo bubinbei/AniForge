@@ -1,4 +1,4 @@
-﻿# API Structure
+# API Structure
 
 ## Endpoints
 - `GET /api/health`

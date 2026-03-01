@@ -1,4 +1,4 @@
-﻿# Frontend Architecture
+# Frontend Architecture
 
 ## Слои
 - `app/*`: страницы и layout.

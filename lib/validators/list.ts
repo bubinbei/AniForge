@@ -1,4 +1,4 @@
-﻿import { z } from "zod";
+import { z } from "zod";
 
 export const userListMutationSchema = z.object({
   status: z.enum(["WATCHING", "COMPLETED", "PLANNED", "DROPPED"]),

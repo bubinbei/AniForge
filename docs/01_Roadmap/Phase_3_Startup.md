@@ -1,4 +1,4 @@
-﻿# Phase 3 — Startup
+# Phase 3 — Startup
 
 ## Scope
 - SaaS billing (mock -> real Stripe).

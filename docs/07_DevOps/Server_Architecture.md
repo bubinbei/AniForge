@@ -1,4 +1,4 @@
-﻿# Server Architecture
+# Server Architecture
 
 ```mermaid
 flowchart TB

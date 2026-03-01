@@ -1,4 +1,4 @@
-﻿# Sprint 1
+# Sprint 1
 
 ## Фокус
 MVP foundation: каркас проекта, schema, auth, каталог, списки.

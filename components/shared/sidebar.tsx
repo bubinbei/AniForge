@@ -1,12 +1,13 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
+import type { Route } from "next";
 import { usePathname } from "next/navigation";
 import { Home, ListChecks, Library, Shield, User } from "lucide-react";
 
 import { cn } from "@/lib/utils/cn";
 
-const links = [
+const links: Array<{ href: Route; label: string; icon: typeof Home }> = [
   { href: "/", label: "Главная", icon: Home },
   { href: "/catalog", label: "Каталог", icon: Library },
   { href: "/my-list", label: "Мой список", icon: ListChecks },

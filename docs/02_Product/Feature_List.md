@@ -1,4 +1,4 @@
-﻿# Feature List
+# Feature List
 
 ## Core
 - Auth + Profile

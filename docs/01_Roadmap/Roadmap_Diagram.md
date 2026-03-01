@@ -1,4 +1,4 @@
-﻿# Roadmap Diagram
+# Roadmap Diagram
 
 ```mermaid
 gantt

@@ -1,4 +1,4 @@
-﻿# Board Meeting Notes
+# Board Meeting Notes
 
 - Date:
 - Participants:

@@ -1,4 +1,4 @@
-﻿# Future ML
+# Future ML
 
 ## Возможные апгрейды
 - Embedding similarity (title + tags + synopsis).

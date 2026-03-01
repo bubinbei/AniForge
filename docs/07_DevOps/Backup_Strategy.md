@@ -1,4 +1,4 @@
-﻿# Backup Strategy
+# Backup Strategy
 
 ## Цель
 Надежный backup PostgreSQL на HDD с возможностью восстановления.

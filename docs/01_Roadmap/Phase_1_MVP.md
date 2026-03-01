@@ -1,4 +1,4 @@
-﻿# Phase 1 — MVP
+# Phase 1 — MVP
 
 ## Scope
 - Auth (Credentials + Google prepared-by-env).

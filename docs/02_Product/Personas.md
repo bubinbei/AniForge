@@ -1,4 +1,4 @@
-﻿# Personas
+# Personas
 
 ## 1) Casual Viewer
 - Смотрит 1-2 тайтла в месяц.

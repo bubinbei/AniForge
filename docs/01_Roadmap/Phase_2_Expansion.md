@@ -1,4 +1,4 @@
-﻿# Phase 2 — Expansion
+# Phase 2 — Expansion
 
 ## Scope
 - AI recommendations v1 (без ML, rule-based).

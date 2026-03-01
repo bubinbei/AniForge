@@ -1,4 +1,4 @@
-﻿import { z } from "zod";
+import { z } from "zod";
 
 export const animeListQuerySchema = z.object({
   page: z.coerce.number().int().positive().default(1),

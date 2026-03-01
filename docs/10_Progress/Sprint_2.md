@@ -1,4 +1,4 @@
-﻿# Sprint 2
+# Sprint 2
 
 ## Фокус
 Smart features: recommendations v1 + achievements.

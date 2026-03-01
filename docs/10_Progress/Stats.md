@@ -1,4 +1,4 @@
-﻿# Stats
+# Stats
 
 ## Технические
 - Кол-во API endpoint.

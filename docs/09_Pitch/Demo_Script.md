@@ -1,4 +1,4 @@
-﻿# Demo Script
+# Demo Script
 
 1. Landing: формулируем ценность AniForge.
 2. Регистрация и вход.

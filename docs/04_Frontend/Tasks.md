@@ -1,4 +1,4 @@
-﻿# Frontend Tasks
+# Frontend Tasks
 
 ## MVP
 - [ ] Каталог с фильтрами и пагинацией.

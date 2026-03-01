@@ -1,4 +1,4 @@
-﻿generator client {
+generator client {
   provider = "prisma-client-js"
 }
 
@@ -101,7 +101,6 @@ model Anime {
 
   genres          AnimeGenre[]
   userLists       UserAnimeList[]
-  auditLogs       AuditLog[]
 
   @@index([title])
   @@index([releaseYear])

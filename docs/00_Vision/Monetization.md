@@ -1,4 +1,4 @@
-﻿# Monetization
+# Monetization
 
 ## Модель
 - Free: до 10 тайтлов суммарно в списках.

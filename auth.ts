@@ -1,13 +1,14 @@
-﻿import NextAuth from "next-auth";
+import NextAuth from "next-auth";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import Credentials from "next-auth/providers/credentials";
 import Google from "next-auth/providers/google";
+import type { Provider } from "next-auth/providers";
 import { compare } from "bcryptjs";
 
 import { prisma } from "@/lib/db/prisma";
 import { loginSchema } from "@/lib/validators/auth";
 
-const providers = [
+const providers: Provider[] = [
   Credentials({
     name: "Credentials",
     credentials: {

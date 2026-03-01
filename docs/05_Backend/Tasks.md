@@ -1,4 +1,4 @@
-﻿# Backend Tasks
+# Backend Tasks
 
 ## MVP
 - [ ] Нормализовать обработку ошибок.

@@ -1,4 +1,4 @@
-﻿# Value Proposition
+# Value Proposition
 
 ## Для пользователя
 - Быстрый discovery релевантного аниме.

@@ -2,10 +2,10 @@
 import { Prisma } from "@prisma/client";
 
 import { requireAdmin } from "@/lib/auth/guards";
-import { getAnimeById } from "@/lib/services/anime-service";
 import { prisma } from "@/lib/db/prisma";
-import { animeMutationSchema } from "@/lib/validators/anime";
+import { getAnimeById } from "@/lib/services/anime-service";
 import { fail, ok } from "@/lib/utils/api-response";
+import { animeMutationSchema } from "@/lib/validators/anime";
 
 export async function GET(_: Request, { params }: { params: { id: string } }) {
   try {
@@ -30,7 +30,7 @@ export async function PATCH(req: Request, { params }: { params: { id: string } }
       return NextResponse.json(fail("VALIDATION_ERROR", "Некорректные данные", parsed.error.flatten()), { status: 400 });
     }
 
-    const data: Prisma.AnimeUpdateInput = {
+    const data: Record<string, unknown> = {
       ...(parsed.data.title ? { title: parsed.data.title } : {}),
       ...(parsed.data.synopsis ? { synopsis: parsed.data.synopsis } : {}),
       ...(parsed.data.releaseYear ? { releaseYear: parsed.data.releaseYear } : {}),
@@ -82,6 +82,7 @@ export async function DELETE(_: Request, { params }: { params: { id: string } })
   try {
     await requireAdmin();
     await prisma.anime.delete({ where: { id: params.id } });
+
     return NextResponse.json(ok({ deleted: true }));
   } catch (error) {
     if ((error as Error).message === "UNAUTHORIZED") {
@@ -90,6 +91,7 @@ export async function DELETE(_: Request, { params }: { params: { id: string } })
     if ((error as Error).message === "FORBIDDEN") {
       return NextResponse.json(fail("FORBIDDEN", "Недостаточно прав"), { status: 403 });
     }
+
     return NextResponse.json(fail("INTERNAL_ERROR", "Внутренняя ошибка", String(error)), { status: 500 });
   }
 }

@@ -1,4 +1,4 @@
-﻿# AniForge
+# AniForge
 
 AniForge — AI-powered anime discovery & tracking платформа (MVP + roadmap до SaaS).
 

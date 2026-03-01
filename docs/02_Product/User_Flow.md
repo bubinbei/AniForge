@@ -1,4 +1,4 @@
-﻿# User Flow
+# User Flow
 
 ```mermaid
 flowchart LR

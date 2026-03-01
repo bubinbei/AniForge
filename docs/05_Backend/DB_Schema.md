@@ -1,4 +1,4 @@
-﻿# DB Schema
+# DB Schema
 
 ## Ключевые модели
 - User
