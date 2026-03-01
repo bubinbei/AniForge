@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+﻿import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -81,29 +81,52 @@ async function main() {
       : await prisma.anime.create({ data: payload });
 
     await prisma.animeGenre.deleteMany({ where: { animeId: anime.id } });
+
     for (const slug of genreSlugs) {
       const genreId = genreMap.get(slug);
-      if (genreId) {
-        await prisma.animeGenre.create({
-          data: {
-            animeId: anime.id,
-            genreId
-          }
-        });
-      }
+      if (!genreId) continue;
+
+      await prisma.animeGenre.create({
+        data: {
+          animeId: anime.id,
+          genreId
+        }
+      });
     }
   }
 
-  await prisma.achievement.upsert({
-    where: { code: "FIRST_ADD" },
-    update: {},
-    create: {
+  const achievements = [
+    {
       code: "FIRST_ADD",
       name: "Первый шаг",
       description: "Добавьте первый тайтл в список",
       xpReward: 20
+    },
+    {
+      code: "FIRST_COMPLETED",
+      name: "Финишер",
+      description: "Завершите первый тайтл",
+      xpReward: 30
+    },
+    {
+      code: "RATER_10",
+      name: "Критик",
+      description: "Поставьте оценку 10",
+      xpReward: 15
     }
-  });
+  ] as const;
+
+  for (const achievement of achievements) {
+    await prisma.achievement.upsert({
+      where: { code: achievement.code },
+      update: {
+        name: achievement.name,
+        description: achievement.description,
+        xpReward: achievement.xpReward
+      },
+      create: achievement
+    });
+  }
 
   if (process.env.ADMIN_EMAIL) {
     await prisma.user.updateMany({
@@ -111,8 +134,6 @@ async function main() {
       data: { role: "ADMIN" }
     });
   }
-
-  // Комментарий: здесь можно расширить seed под подписки и больше достижений.
 }
 
 main()
@@ -120,7 +141,7 @@ main()
     await prisma.$disconnect();
   })
   .catch(async (error) => {
-    // Комментарий: лог оставляем простым для MVP.
+    // Комментарий: для MVP логируем ошибку и выходим с кодом 1.
     console.error(error);
     await prisma.$disconnect();
     process.exit(1);

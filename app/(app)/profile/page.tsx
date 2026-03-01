@@ -25,6 +25,9 @@ export default async function ProfilePage() {
           <div>Имя: {profile.name || "-"}</div>
           <div>Роль: {profile.role}</div>
           <div>План: {profile.plan}</div>
+          <div>Уровень: {profile.level}</div>
+          <div>XP: {profile.xp}</div>
+          <div>Достижений: {profile._count.achievements}</div>
           <div>Тайтлов в списке: {profile._count.animeList}</div>
         </Card>
       </div>

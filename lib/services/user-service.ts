@@ -9,6 +9,8 @@ export async function getProfile(userId: string) {
       name: true,
       role: true,
       plan: true,
+      xp: true,
+      level: true,
       _count: {
         select: {
           animeList: true,

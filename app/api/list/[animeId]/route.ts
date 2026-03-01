@@ -17,14 +17,14 @@ export async function POST(req: Request, { params }: { params: { animeId: string
       return NextResponse.json(fail("VALIDATION_ERROR", "Некорректные данные", parsed.error.flatten()), { status: 400 });
     }
 
-    const item = await upsertUserAnime({
+    const result = await upsertUserAnime({
       userId: user.id,
       animeId: params.animeId,
       status: parsed.data.status,
       rating: parsed.data.rating
     });
 
-    return NextResponse.json(ok(item));
+    return NextResponse.json(ok(result.item, { gamification: result.gamification }));
   } catch (error) {
     if ((error as Error).message === "UNAUTHORIZED") {
       return NextResponse.json(fail("UNAUTHORIZED", "Требуется авторизация"), { status: 401 });

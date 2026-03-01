@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/db/prisma";
+import { applyListGamification } from "@/lib/services/gamification-service";
 
 export async function upsertUserAnime(params: {
   userId: string;
@@ -11,23 +12,24 @@ export async function upsertUserAnime(params: {
     throw new Error("USER_NOT_FOUND");
   }
 
+  const before = await prisma.userAnimeList.findUnique({
+    where: {
+      userId_animeId: {
+        userId: params.userId,
+        animeId: params.animeId
+      }
+    }
+  });
+
   if (user.plan === "FREE") {
     const count = await prisma.userAnimeList.count({ where: { userId: params.userId } });
-    const exists = await prisma.userAnimeList.findUnique({
-      where: {
-        userId_animeId: {
-          userId: params.userId,
-          animeId: params.animeId
-        }
-      }
-    });
 
-    if (!exists && count >= 10) {
+    if (!before && count >= 10) {
       throw new Error("FREE_PLAN_LIMIT");
     }
   }
 
-  return prisma.userAnimeList.upsert({
+  const after = await prisma.userAnimeList.upsert({
     where: {
       userId_animeId: {
         userId: params.userId,
@@ -45,6 +47,17 @@ export async function upsertUserAnime(params: {
       rating: params.rating
     }
   });
+
+  const gamification = await applyListGamification({
+    userId: params.userId,
+    before,
+    after
+  });
+
+  return {
+    item: after,
+    gamification
+  };
 }
 
 export async function getUserList(userId: string) {
