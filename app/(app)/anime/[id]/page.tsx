@@ -1,5 +1,6 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
+import { AnimeListActions } from "@/components/anime/anime-list-actions";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { getAnimeById } from "@/lib/services/anime-service";
@@ -41,6 +42,8 @@ export default async function AnimeDetailPage({ params }: { params: { id: string
           </div>
         </div>
       </Card>
+
+      <AnimeListActions animeId={anime.id} />
     </div>
   );
 }
