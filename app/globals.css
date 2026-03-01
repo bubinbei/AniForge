@@ -1,0 +1,30 @@
+﻿:root {
+  --background: 222 47% 9%;
+  --foreground: 210 40% 98%;
+  --card: 222 47% 11%;
+  --card-foreground: 210 40% 98%;
+  --primary: 188 95% 43%;
+  --primary-foreground: 222 47% 9%;
+  --secondary: 215 28% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 215 28% 17%;
+  --muted-foreground: 217 10% 64%;
+  --accent: 200 70% 45%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 215 27% 20%;
+  --input: 215 27% 20%;
+  --ring: 188 95% 43%;
+  --radius: 0.75rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: radial-gradient(circle at top right, #0b3d5c, #0a1223 40%, #070b14 100%);
+  color: hsl(var(--foreground));
+  min-height: 100vh;
+}
