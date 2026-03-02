@@ -1,4 +1,4 @@
-# AniForge Home (MOC)
+﻿# AniForge Home (MOC)
 
 Главный навигационный документ для Obsidian Graph.
 
@@ -6,6 +6,8 @@
 - [[README]]
 - [[10_Progress/As_Built_Status]]
 - [[01_Roadmap/Phase_1_MVP]]
+- [[02_Product/Collaboration_Protocol]]
+- [[10_Progress/Session_Restart_Playbook]]
 
 ## Стратегия
 - [[00_Vision/Vision]]
